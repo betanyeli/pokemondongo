@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  pokemondongo
 //
-//  Created by Betanyeli Bravo on 27-01-23.
+//  Created by Betanyeli Bravo on 27-01-23. // config app, not ui, por ej. apikey, firebase, etc
 //
 
 import UIKit

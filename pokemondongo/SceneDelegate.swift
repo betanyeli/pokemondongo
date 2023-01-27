@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  pokemondongo
 //
-//  Created by Betanyeli Bravo on 27-01-23.
+//  Created by Betanyeli Bravo on 27-01-23. // todo lo q es vistas.
 //
 
 import UIKit
@@ -16,6 +16,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
+        // if let, ejecuta lo q está en las llaves si todo está ok, el guard let, ejecuta si algo se muere.
+        if let windowScene = scene as? UIWindowScene {
+                    let window = UIWindow(windowScene: windowScene)
+                    let navViewController = UINavigationController(rootViewController: PokemonListViewController())
+                    window.rootViewController = navViewController
+                    
+                    self.window = window
+                    window.makeKeyAndVisible()
+                }
         guard let _ = (scene as? UIWindowScene) else { return }
     }
 
